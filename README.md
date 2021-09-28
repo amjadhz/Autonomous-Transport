@@ -1,2 +1,2 @@
 # Autonimous-Transport
-A website to promote Autonimous vessel 🚢🛳
+A website to promote Autonomous vessel 🚢🛳
