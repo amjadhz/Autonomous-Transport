@@ -11,13 +11,14 @@
 </head>
 
 <header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar" style="background: hsl(171, 100%, 41%)" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
                 <img src="/images/autonomous%20logo.png" width="50" height="23">
             </a>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -64,7 +65,6 @@
         </div>
     </nav>
 </header>
-
 
 
 <body>
