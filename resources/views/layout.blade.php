@@ -13,8 +13,8 @@
 <header>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="LOGO">
+            <a class="navbar-item" href="/">
+                <img src="/images/autonomous%20logo.png" width="50" height="23">
             </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -23,14 +23,49 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="/3d">
+                    3D
+                </a>
+
+                <a class="navbar-item" href="/game">
+                    Game
+                </a>
+
+                <a class="navbar-item" href="/info">
+                    Info
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
-    <ul>
-        <li><a href="/">Home</a> </li>
-        <li><a href="/3d">3D Model</a> </li>
-        <li><a href="/game">Game</a> </li>
-        <li><a href="/info">Info</a> </li>
-    </ul>
 </header>
+
+
 
 <body>
 
@@ -41,4 +76,5 @@
 <footer>
 
 </footer>
+
 
