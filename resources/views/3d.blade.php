@@ -1,17 +1,17 @@
 @extends('layout')
-
+@section('css')
+    <link href="3d.css" rel="stylesheet">
+@endsection
 @section('content')
     <div style="background: #3066BE">
         <p style="font-size: xx-large; text-align: center">
             Our 3D Model
         </p>
-        <div class="center" style="background: #3066BE; margin-left: auto; margin-right: auto; display: block; width: 50%">
-            <div>
+        <div class="center iframeWrapper">
                 <iframe class="align-content-center"
                         src="https://3dwarehouse.sketchup.com/embed/b6b8c531-05da-4d3d-80bb-830152fdfefa" frameborder="0"
                         scrolling="no" marginheight="0" marginwidth="0" width="800" height="400" allowfullscreen>
                 </iframe>
-            </div>
         </div>
     </div>
     <div class="center" style="background: #6cb2eb; width: 100%; height: auto; ">
