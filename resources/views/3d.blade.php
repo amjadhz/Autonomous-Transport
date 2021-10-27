@@ -3,7 +3,7 @@
     <link href="3d.css" rel="stylesheet">
 @endsection
 @section('content')
-    <div style="background: #3066BE">
+    <div>
         <p style="font-size: xx-large; text-align: center">
             Our 3D Model
         </p>
