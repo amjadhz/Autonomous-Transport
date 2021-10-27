@@ -15,7 +15,6 @@
     ></script>
     <link rel="icon" type="image/png" href="favicon.png"/>
 </head>
-
 <body>
 @yield('content')
 
@@ -31,4 +30,12 @@
     });
 </script>
 </body>
+
+
+<footer>
+
+</footer>
+
+
 </html>
+

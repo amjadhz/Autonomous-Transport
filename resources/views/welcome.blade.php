@@ -3,8 +3,8 @@
 @section('content')
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
-        <div class="preloader">
-            <img src="img/preloader.gif" alt="" />
+        <div>
+            <img src="" alt="" />
         </div>
     </div>
     <!-- End Preloader-->
@@ -41,27 +41,17 @@
                         </div>
                         <div class="navbar-item">
                             <a class="navbar-item" href="#about-me">
-                                About Me
+                                About the ship
                             </a>
                         </div>
                         <div class="navbar-item">
                             <a class="navbar-item" href="#services">
-                                Services
+                                3D model
                             </a>
                         </div>
                         <div class="navbar-item">
                             <a class="navbar-item" href="#skills">
-                                Skills
-                            </a>
-                        </div>
-                        <div class="navbar-item">
-                            <a class="navbar-item" href="#my-work">
-                                My Work
-                            </a>
-                        </div>
-                        <div class="navbar-item">
-                            <a class="navbar-item" href="#contact">
-                                Contact
+                                Game
                             </a>
                         </div>
                     </div>
@@ -71,9 +61,8 @@
             <!-- Begin Hero Content-->
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <h1 class="subtitle">Hey there, I'm</h1>
-                    <h2 class="title">Ashley</h2>
-                    <h1 class="subtitle profession">A UI/UX Designer</h1>
+                    <h1 class="subtitle">Discover</h1>
+                    <h2 class="title">Autonomous Sailing</h2>
                 </div>
             </div>
             <!-- End Hero Content-->
@@ -87,19 +76,13 @@
                                     <a href="#home">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#about-me">About Me</a>
+                                    <a href="#about-me">About the Ship</a>
                                 </li>
                                 <li>
-                                    <a href="#services">Services</a>
+                                    <a href="#services">3D model</a>
                                 </li>
                                 <li>
-                                    <a href="#skills">Skills</a>
-                                </li>
-                                <li>
-                                    <a href="#my-work">My Work</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contact</a>
+                                    <a href="#skills">Game</a>
                                 </li>
                             </ul>
                         </div>
@@ -118,7 +101,7 @@
         <div class="section-light about-me" id="about-me">
             <div class="container">
                 <div class="column is-12 about-me">
-                    <h1 class="title has-text-centered section-title">About Me</h1>
+                    <h1 class="title has-text-centered section-title">About the ship</h1>
                 </div>
                 <div class="columns is-multiline">
                     <div
@@ -127,52 +110,23 @@
                     >
                         <p class="is-larger">
                             &emsp;&emsp;<strong
-                            >Showcase is a modern, beautiful personal website template to
-                                showcase who you are, as well as projects you've worked on in
-                                the past.</strong
+                            >Use our website to discover the possibilities of autonomous Shipping.</strong
                             >
                         </p>
                         <br />
                         <p>
-                            Showcase was built from the ground up with Bulma to be fast and
-                            responsive out of the box with all source files well documented
-                            for easy to customization. The Showcase template gives you a
-                            personal space to share what you are all about as a creative
-                            designer, developer, photographer, and more!
+                            Our team created a website where you can explore autonomous shipping in
+                            an entertaining way. Together with Damen and Captain AI, we created a
+                            detailed experience where you can learn about autonomous sailing and its
+                            future, see what some of the autonomous ships look like and play a game to
+                            learn about autonomous vessels.
                         </p>
                         <br />
-                        <div class="is-divider"></div>
-                        <div class="columns about-links">
-                            <div class="column">
-                                <p class="heading">
-                                    <strong>Give me a ring</strong>
-                                </p>
-                                <p class="subheading">
-                                    123-456-7890
-                                </p>
-                            </div>
-                            <div class="column">
-                                <p class="heading">
-                                    <strong>Email Me</strong>
-                                </p>
-                                <p class="subheading">
-                                    hello@example.com
-                                </p>
-                            </div>
-                            <div class="column">
-                                <p class="heading">
-                                    <strong>View my portfolio</strong>
-                                </p>
-                                <p class="subheading">
-                                    example.com
-                                </p>
-                            </div>
-                        </div>
                     </div>
                     <div class="column is-6 right-image " data-aos="fade-left">
                         <img
                                 class="is-rounded"
-                                src="https://picsum.photos/id/366/600/375"
+                                src="https://www.onthemosway.eu/wp-content/uploads/2019/06/dims.jpg"
                                 alt=""
                         />
                     </div>
@@ -208,22 +162,22 @@
         </div>
         <!-- Begin Services Content -->
         <div class="section-color services" id="services">
+
             <div class="container">
+                <h1 class="title has-text-centered section-title">3D</h1>
                 <div class="columns is-multiline">
                     <div
-                            class="column is-12 about-me"
+                            class="column is-12 about-me is-justify-content-center is-flex"
                             data-aos="fade-in"
                             data-aos-easing="linear"
                     >
-                        <h1 class="title has-text-centered section-title">Services</h1>
-
-                        <h2 class="subtitle">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        </h2>
-                        <br />
+                    </div>
+                        <div>
+                        <iframe src="https://3dwarehouse.sketchup.com/embed/b6b8c531-05da-4d3d-80bb-830152fdfefa" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="800" height="400" allowfullscreen></iframe>
                     </div>
                     <div class="columns is-12">
+
+
                         <div
                                 class="column is-4 has-text-centered"
                                 data-aos="fade-in"
@@ -506,5 +460,4 @@
     </div>
     <!-- End Footer -->
 @endsection
-
 
