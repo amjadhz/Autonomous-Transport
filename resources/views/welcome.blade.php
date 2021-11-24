@@ -97,7 +97,7 @@
 
     <!-- Begin Main Content -->
     <div class="main-content">
-        <!-- Begin About Me Section -->
+        <!-- Begin About The Ship Section -->
         <div class="section-light about-me" id="about-me">
             <div class="container">
                 <div class="column is-12 about-me">
@@ -133,33 +133,198 @@
                 </div>
             </div>
         </div>
-        <!-- End About Me Content -->
-        <div class="section-dark resume">
-            <div class="container">
-                <div
-                        class="columns is-multiline"
-                        data-aos="fade-in"
-                        data-aos-easing="linear"
-                >
+        <!-- End About The Ship Content -->
+        <div class="main-content">
+            <!-- Begin Making of the Vessel Section -->
+            <div class="section-light about-me" id="about-me">
+                <div class="container">
                     <div class="column is-12 about-me">
-                        <h1 class="title has-text-centered section-title">
-                            View My Resume
-                        </h1>
+                        <h1 class="title has-text-centered section-title">Making of the vessel</h1>
                     </div>
-                    <div class="column is-10 has-text-centered is-offset-1">
-                        <h2 class="subtitle">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et doloremagna aliqua
-                        </h2>
-                        <form action="example.docs">
-                            <button class="button">
-                                Download Resume&emsp;<i class="fad fa-download fa-lg"></i>
-                            </button>
-                        </form>
+                    <div class="columns is-multiline">
+                        <div
+                            class="column is-6 has-vertically-aligned-content"
+                            data-aos="fade-right"
+                        >
+                            <p class="is-larger">
+                                &emsp;&emsp;<strong
+                                >The making of our vessel has been a long and still ongoing process.</strong
+                                >
+                            </p>
+                            <br />
+                            <p>
+                                The vessels future is looking brighter than ever with the help of Damen to change the vessel from using petrol to being fully electric while also installing all the necessary equipment to make it autonomous.
+                            </p>
+                            <br />
+                        </div>
+                        <div class="column is-6 right-image " data-aos="fade-left">
+                            <img
+                                class="is-rounded"
+                                src="https://i0.wp.com/swzmaritime.nl/wp-content/uploads/2021/11/F.A.S.T.-patrol-boat.jpg?fit=845%2C533&ssl=1"
+                                alt=""
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- End Making of the Vessel Content -->
+            <div class="main-content">
+                <!-- Begin Damen Section -->
+                <div class="section-light about-me" id="about-me">
+                    <div class="container">
+                        <div class="column is-12 about-me">
+                            <h1 class="title has-text-centered section-title">DAMEN</h1>
+                        </div>
+                        <div class="columns is-multiline">
+                            <div
+                                class="column is-6 has-vertically-aligned-content"
+                                data-aos="fade-right"
+                            >
+                                <p class="is-larger">
+                                    &emsp;&emsp;<strong
+                                    >Damen is a family owned business that stands for fellowship, craftsmanship, entrepreneurship and stewardship.</strong
+                                    >
+                                </p>
+                                <br />
+                                <p>
+                                    "We believe that our oceans, seas, lakes and rivers offer humanity a growing range of possibilities in terms of trade, food, energy and recreation. We provide maritime solutions to meet these opportunities, through design, shipbuilding, ship repair and related services."
+                                </p>
+                                <br />
+                            </div>
+                            <div class="column is-6 right-image " data-aos="fade-left">
+                                <img
+                                    class="is-rounded"
+                                    src="https://maritimetechnology.nl/media/damen-6.jpg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Damen Content -->
+                <div class="main-content">
+                    <!-- Begin Captain AI Section -->
+                    <div class="section-light about-me" id="about-me">
+                        <div class="container">
+                            <div class="column is-12 about-me">
+                                <h1 class="title has-text-centered section-title">CaptainAI</h1>
+                            </div>
+                            <div class="columns is-multiline">
+                                <div
+                                    class="column is-6 has-vertically-aligned-content"
+                                    data-aos="fade-right"
+                                >
+                                    <p class="is-larger">
+                                        &emsp;&emsp;<strong
+                                        >The brains of the vessel are engineered by one of the brightest autonomous vessel companies CaptainAI.</strong
+                                        >
+                                    </p>
+                                    <br />
+                                    <p>
+                                       They are based in Rotterdam, Netherlands. They provide all of the needed technology to make the boat think for itself, while also making it as safe as possible for the passengers. Our vessel will use tech like:
+                                    </p>
+                                    <br />
+                                </div>
+                                <div class="column is-6 right-image " data-aos="fade-left">
+                                    <img
+                                        class="is-rounded"
+                                        src="https://www.captainai.com/wp-content/uploads/2020/10/CAP-AI-SVG-footer-01-1.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End CaptainAI Content -->
+                    <div class="main-content">
+                        <!-- Begin Tech Section -->
+                        <div class="section-light about-me" id="about-me">
+                            <div class="container">
+                                <div class="column is-12 about-me">
+                                    <h1 class="title has-text-centered section-title">Our Tech</h1>
+                                </div>
+                                <div class="columns is-multiline">
+                                    <div
+                                        class="column is-6 has-vertically-aligned-content"
+                                        data-aos="fade-right"
+                                    >
+                                        <p class="is-larger">
+                                            &emsp;&emsp;<strong
+                                            >Neural networks</strong
+                                            >
+                                        </p>
+                                        <br />
+                                        <p>
+                                            CaptainAI are building a pipeline for fully automatic data collection and labeling. They do this in order to create dependable predictions of the behavior of vessels and other factors. The latest AI models are being used for object detection, image classification and instance segmentation to create comprehensive situational awareness                                         </p>
+                                        <br />
+                                    </div>
+                                    <div class="column is-6 right-image " data-aos="fade-left">
+                                        <img
+                                            class="is-rounded"
+                                            src="https://www.captainai.com/wp-content/uploads/2020/10/camera_atlantis.gif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-light about-me" id="about-me">
+                                <div class="container">
+                                    <div class="column is-12 about-me">
+                                        <h1 class="title has-text-centered section-title"></h1>
+                                    </div>
+                                    <div class="columns is-multiline">
+                                        <div
+                                            class="column is-6 has-vertically-aligned-content"
+                                            data-aos="fade-right"
+                                        >
+                                            <p class="is-larger">
+                                                &emsp;&emsp;<strong
+                                                >Cloud </strong
+                                                >
+                                            </p>
+                                            <br />
+                                            <p>
+                                                For data visualization of 3D scenes, plots and sensor data dat CaptainAI have built Atlantis, their scalable cloud infrastructure solution. For the route planner a optimal and real time paths is genereated by processing terabytes of data in the cloud.
+                                                <br />
+                                        </div>
+                                        <div class="column is-6 right-image " data-aos="fade-left">
+                                            <img
+                                                class="is-rounded"
+                                                src="https://www.captainai.com/wp-content/uploads/2020/10/depthradar.gif"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-light about-me" id="about-me">
+                                    <div class="container">
+                                        <div class="column is-12 about-me">
+                                            <h1 class="title has-text-centered section-title"></h1>
+                                        </div>
+                                        <div class="columns is-multiline">
+                                            <div
+                                                class="column is-6 has-vertically-aligned-content"
+                                                data-aos="fade-right"
+                                            >
+                                                <p class="is-larger">
+                                                    &emsp;&emsp;<strong
+                                                    >Sensor suite </strong
+                                                    >
+                                                </p>
+                                                <br />
+                                                <p>
+                                                    Our vessels use a variety of inputs for our sensor fusion algorithm, in order to create a reliable view of every situation. It make use of radar, cameras, GPS, Octance, sonar and AIS already installed on most vessels.                                                    <br />
+                                            </div>
+                                            <div class="column is-6 right-image " data-aos="fade-left">
+                                                <img
+                                                    class="is-rounded"
+                                                    src="https://www.captainai.com/wp-content/uploads/2020/10/Captain-AI-Borkum-sensor-fusion.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
         <!-- Begin Services Content -->
         <div class="section-color services" id="services">
 
@@ -173,279 +338,17 @@
                     >
                     </div>
                         <div>
-                        <iframe src="https://3dwarehouse.sketchup.com/embed/b6b8c531-05da-4d3d-80bb-830152fdfefa" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="800" height="400" allowfullscreen></iframe>
+                            <iframe width='853' height='480' src='https://my.matterport.com/show/?m=5RM24QU21q4' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
                     </div>
                     <div class="columns is-12">
 
 
-                        <div
-                                class="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                        >
-                            <i class="fad fa-meteor fa-3x"></i>
-                            <hr />
-                            <h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </h2>
-                        </div>
-                        <div
-                                class="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                        >
-                            <i class="fas fa-paint-brush fa-3x"></i>
-                            <hr />
-                            <h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </h2>
-                        </div>
-                        <div
-                                class="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                        >
-                            <i class="fas fa-rocket fa-3x"></i>
-                            <hr />
-                            <h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </h2>
-                        </div>
-                    </div>
-                    <hr />
-                    <div class="columns is-12">
-                        <div
-                                class="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                        >
-                            <i class="fas fa-upload fa-3x"></i>
-                            <hr />
-                            <h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </h2>
-                        </div>
-                        <div
-                                class="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                        >
-                            <i class="fas fa-bus fa-3x"></i>
-                            <hr />
-                            <h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </h2>
-                        </div>
-                        <div
-                                class="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                        >
-                            <i class="fas fa-code fa-3x"></i>
-                            <hr />
-                            <h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </h2>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         <!-- End Services Content -->
-        <!-- Begin Skills Content -->
-        <div class="section-light skills" id="skills">
-            <div class="container">
-                <div class="columns is-multiline">
-                    <div class="column is-12 about-me">
-                        <h1 class="title has-text-centered section-title">Skills</h1>
-                    </div>
-                    <div
-                            class="column is-6"
-                            data-aos="fade-in"
-                            data-aos-easing="linear"
-                    >
-                        <h1>Adobe Experience Design</h1>
-                        <progress class="progress" value="70" max="100">30%</progress>
-                        <h1>Adobe After Effects</h1>
-                        <progress class="progress" value="65" max="100">30%</progress>
-                        <h1>Visual Studio Code</h1>
-                        <progress class="progress" value="58" max="100">45%</progress>
-                        <h1>Sketch</h1>
-                        <progress class="progress" value="90" max="100">60%</progress>
-                    </div>
-                    <div
-                            class="column is-6"
-                            data-aos="fade-in"
-                            data-aos-easing="linear"
-                    >
-                        <h1>HTML</h1>
-                        <progress class="progress" value="85" max="100">30%</progress>
-                        <h1>CSS</h1>
-                        <progress class="progress" value="95" max="100">30%</progress>
-                        <h1>VueJS</h1>
-                        <progress class="progress" value="70" max="100">45%</progress>
-                        <h1>React</h1>
-                        <progress class="progress" value="60" max="100">60%</progress>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Skills Content -->
-        <!-- Begin Work Content -->
-        <div class="section-dark my-work" id="my-work">
-            <div class="container">
-                <div
-                        class="columns is-multiline"
-                        data-aos="fade-in"
-                        data-aos-easing="linear"
-                >
-                    <div class="column is-12">
-                        <h1 class="title has-text-centered section-title">My Work</h1>
-                    </div>
-                    <div class="column is-3">
-                        <a href="#">
-                            <figure
-                                    class="image is-2by1 work-item"
-                                    style="background-image: url('https://picsum.photos/320/180?image=0');"
-                            ></figure>
-                        </a>
-                    </div>
-                    <div class="column is-3">
-                        <a href="#">
-                            <figure
-                                    class="image is-2by1 work-item"
-                                    style="background-image: url('https://picsum.photos/320/180?image=10');"
-                            ></figure>
-                        </a>
-                    </div>
-                    <div class="column is-3">
-                        <a href="#">
-                            <figure
-                                    class="image is-2by1 work-item"
-                                    style="background-image: url('https://picsum.photos/320/180?image=20');"
-                            ></figure>
-                        </a>
-                    </div>
-                    <div class="column is-3">
-                        <a href="#">
-                            <figure
-                                    class="image is-2by1 work-item"
-                                    style="background-image: url('https://picsum.photos/320/180?image=30');"
-                            ></figure>
-                        </a>
-                    </div>
-                    <div class="column is-3">
-                        <a href="#">
-                            <figure
-                                    class="image is-2by1 work-item"
-                                    style="background-image: url('https://picsum.photos/320/180?image=40');"
-                            ></figure>
-                        </a>
-                    </div>
-                    <div class="column is-3">
-                        <a href="#">
-                            <figure
-                                    class="image is-2by1 work-item"
-                                    style="background-image: url('https://picsum.photos/320/180?image=50');"
-                            ></figure>
-                        </a>
-                    </div>
-                    <div class="column is-3">
-                        <a href="#">
-                            <figure
-                                    class="image is-2by1 work-item"
-                                    style="background-image: url('https://picsum.photos/320/180?image=60');"
-                            ></figure>
-                        </a>
-                    </div>
-                    <div class="column is-3">
-                        <a href="#">
-                            <figure
-                                    class="image is-2by1 work-item"
-                                    style="background-image: url('https://picsum.photos/320/180?image=70');"
-                            ></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Work Content -->
-        <!-- Begin Contact Content -->
-        <div class="section-light contact" id="contact">
-            <div class="container">
-                <div
-                        class="columns is-multiline"
-                        data-aos="fade-in-up"
-                        data-aos-easing="linear"
-                >
-                    <div class="column is-12 about-me">
-                        <h1 class="title has-text-centered section-title">
-                            Get in touch
-                        </h1>
-                    </div>
-                    <div class="column is-8 is-offset-2">
-                        <form
-                                action="https://formspree.io/email@example.com"
-                                method="POST"
-                        >
-                            <div class="field">
-                                <label class="label">Name</label>
-                                <div class="control has-icons-left">
-                                    <input
-                                            class="input"
-                                            type="text"
-                                            placeholder="Ex. Jane Smith"
-                                            name="Name"
-                                    />
-                                    <span class="icon is-small is-left">
-                      <i class="fas fa-user"></i>
-                    </span>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Email</label>
-                                <div class="control has-icons-left">
-                                    <input
-                                            class="input"
-                                            type="email"
-                                            placeholder="Ex. hello@arctheme.com"
-                                            name="Email"
-                                    />
-                                    <span class="icon is-small is-left">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Message</label>
-                                <div class="control">
-                    <textarea
-                            class="textarea"
-                            placeholder="Textarea"
-                            name="Message"
-                    ></textarea>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control ">
-                                    <button class="button submit-button">
-                                        Submit&nbsp;&nbsp;
-                                        <i class="fas fa-paper-plane"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Contact Content -->
     </div>
     <!-- End Main Content -->
 
