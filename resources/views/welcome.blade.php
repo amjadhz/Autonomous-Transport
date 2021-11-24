@@ -4,7 +4,7 @@
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
         <div>
-            <img src="" alt="" />
+            <img src="" alt=""/>
         </div>
     </div>
     <!-- End Preloader-->
@@ -105,15 +105,13 @@
                 </div>
                 <div class="columns is-multiline">
                     <div
-                            class="column is-6 has-vertically-aligned-content"
-                            data-aos="fade-right"
+                        class="column is-6 has-vertically-aligned-content"
+                        data-aos="fade-right"
                     >
                         <p class="is-larger">
-                            &emsp;&emsp;<strong
-                            >Use our website to discover the possibilities of autonomous Shipping.</strong
-                            >
+                            &emsp;&emsp;<strong>Use our website to discover the possibilities of autonomous Shipping.</strong>
                         </p>
-                        <br />
+                        <br/>
                         <p>
                             Our team created a website where you can explore autonomous shipping in
                             an entertaining way. Together with Damen and Captain AI, we created a
@@ -121,13 +119,13 @@
                             future, see what some of the autonomous ships look like and play a game to
                             learn about autonomous vessels.
                         </p>
-                        <br />
+                        <br/>
                     </div>
                     <div class="column is-6 right-image " data-aos="fade-left">
                         <img
-                                class="is-rounded"
-                                src="https://www.onthemosway.eu/wp-content/uploads/2019/06/dims.jpg"
-                                alt=""
+                            class="is-rounded"
+                            src="https://www.onthemosway.eu/wp-content/uploads/2019/06/dims.jpg"
+                            alt=""
                         />
                     </div>
                 </div>
@@ -147,15 +145,15 @@
                             data-aos="fade-right"
                         >
                             <p class="is-larger">
-                                &emsp;&emsp;<strong
-                                >The making of our vessel has been a long and still ongoing process.</strong
-                                >
+                                &emsp;&emsp;<strong>The making of our vessel has been a long and still ongoing process.</strong>
                             </p>
-                            <br />
+                            <br/>
                             <p>
-                                The vessels future is looking brighter than ever with the help of Damen to change the vessel from using petrol to being fully electric while also installing all the necessary equipment to make it autonomous.
+                                The vessels future is looking brighter than ever with the help of Damen to change the
+                                vessel from using petrol to being fully electric while also installing all the necessary
+                                equipment to make it autonomous.
                             </p>
-                            <br />
+                            <br/>
                         </div>
                         <div class="column is-6 right-image " data-aos="fade-left">
                             <img
@@ -181,15 +179,17 @@
                                 data-aos="fade-right"
                             >
                                 <p class="is-larger">
-                                    &emsp;&emsp;<strong
-                                    >Damen is a family owned business that stands for fellowship, craftsmanship, entrepreneurship and stewardship.</strong
-                                    >
+                                    &emsp;&emsp;<strong>Damen is a family owned business that stands for fellowship, craftsmanship,
+                                        entrepreneurship and stewardship.</strong>
                                 </p>
-                                <br />
+                                <br/>
                                 <p>
-                                    "We believe that our oceans, seas, lakes and rivers offer humanity a growing range of possibilities in terms of trade, food, energy and recreation. We provide maritime solutions to meet these opportunities, through design, shipbuilding, ship repair and related services."
+                                    "We believe that our oceans, seas, lakes and rivers offer humanity a growing range
+                                    of possibilities in terms of trade, food, energy and recreation. We provide maritime
+                                    solutions to meet these opportunities, through design, shipbuilding, ship repair and
+                                    related services."
                                 </p>
-                                <br />
+                                <br/>
                             </div>
                             <div class="column is-6 right-image " data-aos="fade-left">
                                 <img
@@ -215,15 +215,16 @@
                                     data-aos="fade-right"
                                 >
                                     <p class="is-larger">
-                                        &emsp;&emsp;<strong
-                                        >The brains of the vessel are engineered by one of the brightest autonomous vessel companies CaptainAI.</strong
-                                        >
+                                        &emsp;&emsp;<strong>The brains of the vessel are engineered by one of the brightest autonomous
+                                            vessel companies CaptainAI.</strong>
                                     </p>
-                                    <br />
+                                    <br/>
                                     <p>
-                                       They are based in Rotterdam, Netherlands. They provide all of the needed technology to make the boat think for itself, while also making it as safe as possible for the passengers. Our vessel will use tech like:
+                                        They are based in Rotterdam, Netherlands. They provide all of the needed
+                                        technology to make the boat think for itself, while also making it as safe as
+                                        possible for the passengers. Our vessel will use tech like:
                                     </p>
-                                    <br />
+                                    <br/>
                                 </div>
                                 <div class="column is-6 right-image " data-aos="fade-left">
                                     <img
@@ -249,14 +250,16 @@
                                         data-aos="fade-right"
                                     >
                                         <p class="is-larger">
-                                            &emsp;&emsp;<strong
-                                            >Neural networks</strong
-                                            >
+                                            <strong> Neural networks</strong>
                                         </p>
-                                        <br />
+                                        <br/>
                                         <p>
-                                            CaptainAI are building a pipeline for fully automatic data collection and labeling. They do this in order to create dependable predictions of the behavior of vessels and other factors. The latest AI models are being used for object detection, image classification and instance segmentation to create comprehensive situational awareness                                         </p>
-                                        <br />
+                                            CaptainAI are building a pipeline for fully automatic data collection and
+                                            labeling. They do this in order to create dependable predictions of the
+                                            behavior of vessels and other factors. The latest AI models are being used
+                                            for object detection, image classification and instance segmentation to
+                                            create comprehensive situational awareness </p>
+                                        <br/>
                                     </div>
                                     <div class="column is-6 right-image " data-aos="fade-left">
                                         <img
@@ -278,14 +281,15 @@
                                             data-aos="fade-right"
                                         >
                                             <p class="is-larger">
-                                                &emsp;&emsp;<strong
-                                                >Cloud </strong
-                                                >
+                                                <strong>Cloud </strong>
                                             </p>
-                                            <br />
+                                            <br/>
                                             <p>
-                                                For data visualization of 3D scenes, plots and sensor data dat CaptainAI have built Atlantis, their scalable cloud infrastructure solution. For the route planner a optimal and real time paths is genereated by processing terabytes of data in the cloud.
-                                                <br />
+                                                For data visualization of 3D scenes, plots and sensor data dat CaptainAI
+                                                have built Atlantis, their scalable cloud infrastructure solution. For
+                                                the route planner a optimal and real time paths is generated by
+                                                processing terabytes of data in the cloud.
+                                                <br/>
                                         </div>
                                         <div class="column is-6 right-image " data-aos="fade-left">
                                             <img
@@ -307,13 +311,14 @@
                                                 data-aos="fade-right"
                                             >
                                                 <p class="is-larger">
-                                                    &emsp;&emsp;<strong
-                                                    >Sensor suite </strong
-                                                    >
+                                                    &emsp;&emsp;<strong>Sensor suite </strong>
                                                 </p>
-                                                <br />
+                                                <br/>
                                                 <p>
-                                                    Our vessels use a variety of inputs for our sensor fusion algorithm, in order to create a reliable view of every situation. It make use of radar, cameras, GPS, Octance, sonar and AIS already installed on most vessels.                                                    <br />
+                                                    Our vessels use a variety of inputs for our sensor fusion algorithm,
+                                                    in order to create a reliable view of every situation. It make use
+                                                    of radar, cameras, GPS, Octance, sonar and AIS already installed on
+                                                    most vessels. <br/>
                                             </div>
                                             <div class="column is-6 right-image " data-aos="fade-left">
                                                 <img
@@ -324,43 +329,47 @@
                                             </div>
                                         </div>
                                     </div>
-                        </div>
-        <!-- Begin Services Content -->
-        <div class="section-color services" id="services">
+                                </div>
+                                <!-- Begin Services Content -->
+                                <div class="section-color services" id="services">
 
-            <div class="container">
-                <h1 class="title has-text-centered section-title">3D</h1>
-                <div class="columns is-multiline">
-                    <div
-                            class="column is-12 about-me is-justify-content-center is-flex"
-                            data-aos="fade-in"
-                            data-aos-easing="linear"
-                    >
-                    </div>
-                        <div>
-                            <iframe width='853' height='480' src='https://my.matterport.com/show/?m=5RM24QU21q4' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
-                    </div>
-                    <div class="columns is-12">
+                                    <div class="container">
+                                        <h1 class="title has-text-centered section-title">3D</h1>
+                                        <div class="columns is-multiline">
+                                            <div
+                                                class="column is-12 about-me is-justify-content-center is-flex"
+                                                data-aos="fade-in"
+                                                data-aos-easing="linear"
+                                            >
+                                            </div>
+                                            <div>
+                                                <iframe width='853' height='480'
+                                                        src='https://my.matterport.com/show/?m=5RM24QU21q4'
+                                                        frameborder='0' allowfullscreen
+                                                        allow='xr-spatial-tracking'></iframe>
+                                            </div>
+                                            <div class="columns is-12">
 
 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Services Content -->
+                            </div>
+                            <!-- End Main Content -->
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <!-- End Services Content -->
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Begin Footer -->
-    <div class="footer">
-        <p>
-            <strong class="white">Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
-            The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-        </p>
-    </div>
-    <!-- End Footer -->
+                            <!-- Begin Footer -->
+                            <div class="footer">
+                                <p>
+                                    <strong class="white">Bulma</strong> by
+                                    <a href="http://jgthms.com">Jeremy Thomas</a>.
+                                    The source code is licensed
+                                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website
+                                    content is licensed
+                                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                                </p>
+                            </div>
+                            <!-- End Footer -->
 @endsection
 
