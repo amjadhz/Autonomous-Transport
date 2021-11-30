@@ -34,7 +34,7 @@ jobs:
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
     - name: Set up npm 
-      run: 
+      run: |
           npm upgrade 
           npm install
           npm run dev
