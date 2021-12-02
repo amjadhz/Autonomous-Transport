@@ -32,10 +32,5 @@
 </body>
 
 
-<footer>
-
-</footer>
-
-
 </html>
 
