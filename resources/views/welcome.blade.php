@@ -76,7 +76,7 @@
                                     <a href="#home">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#about-me">About the Ship</a>
+                                    <a href="#about-me">{{__('messages.aboutShip')}}</a>
                                 </li>
                                 <li>
                                     <a href="#services">3D model</a>
@@ -108,29 +108,31 @@
         </div>
     </li>
 
+    <div class="container">
+        <div class="row justify-content-center">
+            <h3>{{__('messages.welcome')}}</h3>
+        </div>
+    </div>
+
+
     <!-- Begin Main Content -->
     <div class="main-content">
         <!-- Begin About The Ship Section -->
         <div class="section-light about-me" id="about-me">
             <div class="container">
                 <div class="column is-12 about-me">
-                    <h1 class="title has-text-centered section-title">About the ship</h1>
+                    <h1 class="title has-text-centered section-title">{{__('messages.aboutShip')}}</h1>
                 </div>
                 <div class="columns is-multiline">
                     <div
                         class="column is-6 has-vertically-aligned-content"
                         data-aos="fade-right">
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>Use our website to discover the possibilities of autonomous
-                                Shipping.</strong>
+                            &emsp;&emsp;<strong>{{ __('messages.aboutShip-sub') }}</strong>
                         </p>
                         <br/>
                         <p>
-                            Our team created a website where you can explore autonomous shipping in
-                            an entertaining way. Together with Damen and Captain AI, we created a
-                            detailed experience where you can learn about autonomous sailing and its
-                            future, see what some of the autonomous ships look like and play a game to
-                            learn about autonomous vessels.
+                            {{__('messages.aboutShip-par')}}
                         </p>
                         <br/>
                     </div>
@@ -144,7 +146,7 @@
                 </div>
                 <!-- Begin Making of the Vessel Section -->
                 <div class="column is-12 about-me">
-                    <h1 class="title has-text-centered section-title">Making of the vessel</h1>
+                    <h1 class="title has-text-centered section-title">{{__('messages.makingOfTheVessel')}}</h1>
                 </div>
                 <div class="columns is-multiline">
                     <div
@@ -152,14 +154,11 @@
                         data-aos="fade-right"
                     >
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>The making of our vessel has been a long and still ongoing
-                                process.</strong>
+                            &emsp;&emsp;<strong>{{__('messages.makingOfTheVessel-sub')}}</strong>
                         </p>
                         <br/>
                         <p>
-                            The vessels future is looking brighter than ever with the help of Damen to change the
-                            vessel from using petrol to being fully electric while also installing all the necessary
-                            equipment to make it autonomous.
+                            {{__('messages.makingOfTheVessel-par')}}
                         </p>
                         <br/>
                     </div>
@@ -175,7 +174,7 @@
 
                 <!-- Begin of Damen -->
                 <div class="column is-12 about-me">
-                    <h1 class="title has-text-centered section-title">DAMEN</h1>
+                    <h1 class="title has-text-centered section-title">{{__('messages.damen')}}</h1>
                 </div>
                 <div class="columns is-multiline">
                     <div
@@ -183,16 +182,11 @@
                         data-aos="fade-right"
                     >
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>Damen is a family owned business that stands for fellowship,
-                                craftsmanship,
-                                entrepreneurship and stewardship.</strong>
+                            &emsp;&emsp;<strong>{{__('messages.damen-sub')}}</strong>
                         </p>
                         <br/>
                         <p>
-                            "We believe that our oceans, seas, lakes and rivers offer humanity a growing range
-                            of possibilities in terms of trade, food, energy and recreation. We provide maritime
-                            solutions to meet these opportunities, through design, shipbuilding, ship repair and
-                            related services."
+                            {{__('messages.damen-par')}}
                         </p>
                         <br/>
                     </div>
@@ -208,7 +202,7 @@
 
                 <!-- Begin of CaptainAI -->
                 <div class="column is-12 about-me">
-                    <h1 class="title has-text-centered section-title">CaptainAI</h1>
+                    <h1 class="title has-text-centered section-title">{{__('messages.captain')}}</h1>
                 </div>
                 <div class="columns is-multiline">
                     <div
@@ -216,15 +210,11 @@
                         data-aos="fade-right"
                     >
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>The brains of the vessel are engineered by one of the brightest
-                                autonomous
-                                vessel companies CaptainAI.</strong>
+                            &emsp;&emsp;<strong>{{__('messages.captain-sub')}}</strong>
                         </p>
                         <br/>
                         <p>
-                            They are based in Rotterdam, Netherlands. They provide all of the needed
-                            technology to make the boat think for itself, while also making it as safe as
-                            possible for the passengers. Our vessel will use tech like:
+                            {{__('messages.captain-par')}}
                         </p>
                         <br/>
                     </div>
@@ -240,22 +230,19 @@
 
                 <!-- Begin of Our Tech -->
                 <div class="column is-12 about-me">
-                    <h1 class="title has-text-centered section-title">Our Tech</h1>
+                    <h1 class="title has-text-centered section-title">{{__('messages.tech')}}</h1>
                 </div>
                 <div class="columns is-multiline">
                     <div
                         class="column is-6 has-vertically-aligned-content"
                         data-aos="fade-right">
                         <p class="is-larger">
-                            <strong> Neural networks</strong>
+                            <strong> {{__('messages.neuralNetwork')}}</strong>
                         </p>
                         <br/>
                         <p>
-                            CaptainAI are building a pipeline for fully automatic data collection and
-                            labeling. They do this in order to create dependable predictions of the
-                            behavior of vessels and other factors. The latest AI models are being used
-                            for object detection, image classification and instance segmentation to
-                            create comprehensive situational awareness </p>
+                            {{__('messages.neuralNetwork-par')}}
+                        </p>
                         <br/>
                     </div>
                     <div class="column is-6 right-image " data-aos="fade-left">
@@ -276,14 +263,11 @@
                         class="column is-6 has-vertically-aligned-content"
                         data-aos="fade-right">
                         <p class="is-larger">
-                            <strong>Cloud </strong>
+                            <strong>{{__('messages.cloud')}} </strong>
                         </p>
                         <br/>
                         <p>
-                            For data visualization of 3D scenes, plots and sensor data dat CaptainAI
-                            have built Atlantis, their scalable cloud infrastructure solution. For
-                            the route planner a optimal and real time paths is generated by
-                            processing terabytes of data in the cloud.
+                            {{__('messages.cloud-par')}}
                             <br/>
                     </div>
                     <div class="column is-6 right-image " data-aos="fade-left">
@@ -304,14 +288,11 @@
                     <div class="column is-6 has-vertically-aligned-content"
                          data-aos="fade-right">
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>Sensor suite </strong>
+                            &emsp;&emsp;<strong>{{__('messages.sensor')}} </strong>
                         </p>
                         <br/>
                         <p>
-                            Our vessels use a variety of inputs for our sensor fusion algorithm,
-                            in order to create a reliable view of every situation. It make use
-                            of radar, cameras, GPS, Octance, sonar and AIS already installed on
-                            most vessels. <br/>
+                            {{__('messages.sensor-par')}} <br/>
                     </div>
                     <div class="column is-6 right-image " data-aos="fade-left">
                         <img
