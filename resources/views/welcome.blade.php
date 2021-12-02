@@ -54,6 +54,7 @@
                                 Game
                             </a>
                         </div>
+
                     </div>
                 </div>
             </nav>
@@ -83,6 +84,9 @@
                                 </li>
                                 <li>
                                     <a href="#skills">Game</a>
+                                </li>
+                                <li>
+                                    <a href="/home">Login</a>
                                 </li>
                             </ul>
                         </div>
