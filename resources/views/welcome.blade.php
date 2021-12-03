@@ -92,22 +92,22 @@
             <!-- End Hero Menu -->
         </section>
         <!-- End Hero -->
+
+        {{--    Start of language menu--}}
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="flag-icon flag-icon-{{Config::get('languages')[App::getLocale()]['flag-icon']}}"></span> {{ Config::get('languages')[App::getLocale()]['display'] }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                @foreach (Config::get('languages') as $lang => $language)
+                    @if ($lang != App::getLocale())
+                        <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"><span class="flag-icon flag-icon-{{$language['flag-icon']}}"></span> {{$language['display']}}</a>
+                    @endif
+                @endforeach
+            </div>
+        </li>
     </div>
     <!-- End Header -->
-{{--    Start of language menu--}}
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="flag-icon flag-icon-{{Config::get('languages')[App::getLocale()]['flag-icon']}}"></span> {{ Config::get('languages')[App::getLocale()]['display'] }}
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            @foreach (Config::get('languages') as $lang => $language)
-                @if ($lang != App::getLocale())
-                    <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"><span class="flag-icon flag-icon-{{$language['flag-icon']}}"></span> {{$language['display']}}</a>
-                @endif
-            @endforeach
-        </div>
-    </li>
-
     <div class="container">
         <div class="row justify-content-center">
             <h3>{{__('messages.welcome')}}</h3>
@@ -311,7 +311,7 @@
             <!-- Begin Services Content -->
             <div class="section-color services" id="services">
                 <div class="container">
-                    <h1 class="title has-text-centered section-title">3D</h1>
+                    <h1 class="title has-text-centered section-title">3D Model</h1>
                     <div class="columns is-multiline">
                         <div
                             class="column is-12 about-me is-justify-content-center is-flex"

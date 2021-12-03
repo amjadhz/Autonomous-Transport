@@ -8,5 +8,9 @@ return [
     'nl' => [
         'display' => 'Nederlands',
         'flag-icon' => 'nl'
+    ],
+    'de' => [
+        'display' => 'Deutsch',
+        'flag-icon' => 'de'
     ]
 ];
