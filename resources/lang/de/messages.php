@@ -23,14 +23,14 @@ return [
     //Paragraphs which contain the content of the articles
     'aboutShip-par' => 'Unser Team hat eine Website erstellt, auf der Sie die Möglichkeiten des autonomen Segelns auf einem
                                 lustige Art zu entdecken. In Zusammenarbeit mit Damen und CaptainAI haben wir
-                                Wir haben ein detailliertes Erlebnis geschaffen, in dem Sie
+                                 ein detailliertes Erlebnis geschaffen, in dem Sie
                                 können sich über autonome Schiffe und die Zukunft des autonomen Segelns informieren.',
 
     'makingOfTheVessel-par' => 'Die Zukunft des Schiffes sieht sehr rosig aus. Dies ist zum Teil auf die Hilfe von Damen zurückzuführen,
                                 die das Schiff mit den notwendigen Sensoren ausgestattet haben. Sie haben auch das Schiff
                                 100 % elektrisch.',
 
-    'damen-par' => '„Wir glauben, dass wir glauben, dass unsere Ozeane, Meere, Seen und Flüsse der Menschheit eine wachsende Anzahl von
+    'damen-par' => '„Wir glauben dass, unsere Ozeane, Meere, Seen und Flüsse der Menschheit eine wachsende Anzahl von
                         bieten Chancen in den Bereichen Handel, Ernährung, Energie und Erholung. Wir bieten maritime
                         Lösungen, um diese Chancen zu erfüllen, durch Design, Schiffbau, Schiffsreparatur und
                         damit verbundene Dienstleistungen."',
@@ -50,6 +50,6 @@ return [
                     In der Cloud werden große Datenmengen verarbeitet.',
 
     'sensor-par' => 'Das Schiff verwendet eine große Anzahl von Sensoren, um die Umgebung aufzubauen. Diese Sensoren ermöglichen dem Schiff
-                        schaffen ein zuverlässiges Bild für alle Situationen. Es verwendet Radar, Sonar, Kameras,
+                         ein zuverlässiges Bild für alle Situationen zu schaffen. Es verwendet Radar, Sonar, Kameras,
                         GPS-Oktanz und AIS.',
 ];
