@@ -351,10 +351,10 @@
                         <br><br><br>
                         <h1 class="title has-text-centered section-title">Game</h1>
                     </div>
-                    <div class="container">
-                        <div class="columns is-centered">
+                    <div class="container" >
+                        <div class="columns is-centered"  >
                             <a href="https://games.gdevelop-app.com/game-8b2f3e0f-a627-46e6-ac54-2163546a66db/index.html" target="_blank">
-                                <img src="/images/Logo.png" class="is-hoverable"></a>
+                                <img src="/images/Logo.png" class="is-hoverable" id="gameImage"></a>
                         </div>
                     </div>
                 </div>
