@@ -19,5 +19,12 @@
             </div>
         </div>
     </div>
+    <div class="buttons text-white justify-content-center mt-6 mb-6">
+        <a href="/create">
+            <button class="button is-success">
+                Create new Blog
+            </button>
+        </a>
+    </div>
 </div>
 @endsection

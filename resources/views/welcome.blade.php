@@ -86,7 +86,7 @@
                                     <a href="#skills">Game</a>
                                 </li>
                                 <li>
-                                    <a href="/home">Login</a>
+                                    <a href="/dashboard">Login</a>
                                 </li>
                             </ul>
                         </div>
