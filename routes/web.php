@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +22,5 @@ Route::get('/', function () {
 Auth::routes(['register'=>false]);
 
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
-Route::get('/create', [HomeController::class, 'create'])->name('create');
+
+Route::resource('blogs',BlogController::class);

@@ -24,14 +24,18 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container buttons">
-                <a class="navbar-brand button is-link rounded-circle" href="{{ url('/') }}">
+            <div class="container">
+                <a class="navbar-item is-hovered" href="{{ url('/') }}">
                     Website
                 </a>
                 @auth()
-                <a class="ml-3 navbar-brand button rounded-circle is-link   " href="{{ url('/dashboard') }}">
-                    Dashboard
-                </a>
+                    <a class="navbar-item is-hovered" href="{{ url('/dashboard') }}">
+                        Dashboard
+                    </a>
+
+                    <a class="navbar-item is-hovered" href="{{ url('/blogs') }}">
+                        Blogs
+                    </a>
                 @endauth
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

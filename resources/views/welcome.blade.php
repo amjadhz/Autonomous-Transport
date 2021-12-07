@@ -54,6 +54,13 @@
                                 Game
                             </a>
                         </div>
+                        <div class="navbar-item">
+                            @if(\Illuminate\Support\Facades\Auth::user())
+                                <a href="/dashboard">Dashboard</a>
+                            @else
+                                <a href="/dashboard">Login</a>
+                            @endif
+                        </div>
 
                     </div>
                 </div>
@@ -86,7 +93,11 @@
                                     <a href="#skills">Game</a>
                                 </li>
                                 <li>
-                                    <a href="/dashboard">Login</a>
+                                    @if(\Illuminate\Support\Facades\Auth::user())
+                                    <a href="/dashboard">Dashboard</a>
+                                    @else
+                                        <a href="/dashboard">Login</a>
+                                    @endif
                                 </li>
                             </ul>
                         </div>
