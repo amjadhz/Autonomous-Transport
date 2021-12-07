@@ -9,6 +9,17 @@ class Blog extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var string[]
+     */
+    protected $fillable = [
+        'title',
+        'description',
+        'blog'
+    ];
+
     public function user(){
         return $this->belongsTo(User::Class);
     }

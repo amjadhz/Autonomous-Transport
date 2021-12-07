@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use Illuminate\Auth\Access\Gate;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
 
 class HomeController extends Controller
 {
@@ -23,8 +27,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('dashboard');
     }
+
+
 
     public function languageDemo(){
         return view('languageDemo');

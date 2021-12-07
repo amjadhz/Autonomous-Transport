@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes(['register'=>false]);
+
+Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
+
+Route::resource('blogs',BlogController::class);
 Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
 
 Route::get('/languageDemo', 'App\Http\Controllers\HomeController@languageDemo');
