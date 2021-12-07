@@ -3309,6 +3309,7 @@
             "require": {
                 "php": ">=8.0.2",
                 "symfony/event-dispatcher-contracts": "^2|^3"
+
             },
             "conflict": {
                 "symfony/dependency-injection": "<5.4"
@@ -3326,6 +3327,7 @@
                 "symfony/http-foundation": "^5.4|^6.0",
                 "symfony/service-contracts": "^1.1|^2|^3",
                 "symfony/stopwatch": "^5.4|^6.0"
+
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -3358,6 +3360,7 @@
             "homepage": "https://symfony.com",
             "support": {
                 "source": "https://github.com/symfony/event-dispatcher/tree/v6.0.0"
+
             },
             "funding": [
                 {
@@ -3374,6 +3377,7 @@
                 }
             ],
             "time": "2021-11-23T19:05:29+00:00"
+
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -4852,6 +4856,9 @@
             "conflict": {
                 "symfony/translation-contracts": "<2.0"
             },
+            "conflict": {
+                "symfony/translation-contracts": ">=3.0"
+            },
             "require-dev": {
                 "symfony/error-handler": "^5.4|^6.0",
                 "symfony/http-client": "^5.4|^6.0",
@@ -5007,6 +5014,7 @@
                 }
             ],
             "time": "2021-11-29T15:32:57+00:00"
+
         },
         {
             "name": "symfony/translation-contracts",

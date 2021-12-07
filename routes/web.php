@@ -24,3 +24,6 @@ Auth::routes(['register'=>false]);
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 
 Route::resource('blogs',BlogController::class);
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
+
+Route::get('/languageDemo', 'App\Http\Controllers\HomeController@languageDemo');

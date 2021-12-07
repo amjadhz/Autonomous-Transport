@@ -7,6 +7,7 @@ use Illuminate\Auth\Access\Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
+
 class HomeController extends Controller
 {
     /**
@@ -29,4 +30,9 @@ class HomeController extends Controller
         return view('dashboard');
     }
 
+
+
+    public function languageDemo(){
+        return view('languageDemo');
+    }
 }
