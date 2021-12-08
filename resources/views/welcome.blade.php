@@ -376,17 +376,26 @@
         <!-- End Main Content -->
 
 {{--                Display the last five blogs--}}
-        <div class="section-color services">
-            <div class="column is-12 about-me">
-                <br><br><br>
-                <h1 class="title has-text-centered section-title">News</h1>
-            </div>
+                <div class="section-color services is-full">
+                    <div class="container is-justify-content-center">
+                            <div class="column is-12 about-me">
+                                <h1 class="title has-text-centered section-title">News</h1>
+                            </div>
+                            <div class="container has-text-centered overflow-hidden">
+                                <!-- Start Carousel -->
+                                    <div id="carousel-demo" class="carousel ">
+                                        @foreach($blogs as $blog)
+                                            <div class="item-{{$loop->index + 1}} column is-full">
+                                                    <p><strong style="color: white;">{{$blog->title}}</strong><br></p>
+                                                    <p class="">{{$blog->description}}</p>
+                                                <br><br><br>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                    <!-- End Carousel -->
+                            </div>
+                    </div>
+                </div>
 
-            @foreach($blogs as $blog)
-                <li>
-                    {{$blog->title}}
-                </li>
-            @endforeach
-        </div>
 @endsection
 
