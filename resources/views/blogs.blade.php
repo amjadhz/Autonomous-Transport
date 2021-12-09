@@ -73,10 +73,10 @@
         <div class="container pt-3">
             <div class="columns is-multiline is-mobile">
                 @foreach($blogs as $blog)
-                    <a style="text-decoration: none" href="/showBlog/{{$blog->id}}"  class="column box has-text-centered is-one-third pt-3 has-text-black">
+                    <a href="/showBlog/{{$blog->id}}"  class="column box has-text-centered is-one-third pt-3 has-text-black showBlogContent">
                         <div>
                             <h1><strong>{{$blog->title}}</strong></h1>
-                            <h2>{{$blog->description}}</h2>
+                            <h2 class="showBlogDescription">{{$blog->description}}</h2>
                             <img src="{{$blog->image}}">
                         </div>
                     </a>

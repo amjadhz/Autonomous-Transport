@@ -369,3 +369,15 @@ body.preloader-site {
     background: black center center no-repeat;
     border: 1px solid black;
 }
+
+#carouselDescription{
+    overflow-wrap: break-word;
+}
+
+.showBlogContent{
+    text-decoration: none !important;
+}
+
+.showBlogDescription{
+    overflow-wrap: break-word;
+}

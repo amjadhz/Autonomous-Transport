@@ -75,7 +75,7 @@
                 <div class="container">
                     <div class="column is-12 about-me">
                         <h1 class="title has-text-centered section-title">{{$blog->title}}</h1>
-                            <form action={{ url()->previous() }}>
+                            <form action="{{ url()->previous() }}/#news">
                                 <button class="button is-black">Back</button>
                             </form>
                     </div>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-    </div>
+            </div>
 
 
 @endsection

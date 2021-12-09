@@ -98,7 +98,7 @@
                                     <a href="#game">Game</a>
                                 </li>
                                 <li>
-                                    <a href="#news">News</a>
+                                    <a href="#news">{{__('messages.news')}}</a>
                                 </li>
                                 <li>
                                     @if(\Illuminate\Support\Facades\Auth::user())
@@ -387,7 +387,7 @@
                 <div class="section-color services is-full" id="news">
                     <div class="container is-justify-content-center">
                             <div class="column is-12 about-me">
-                                <h1 class="title has-text-centered section-title">News</h1>
+                                <h1 class="title has-text-centered section-title">{{__('messages.news')}}</h1>
                             </div>
                             <div class="container has-text-centered overflow-hidden">
                                 <!-- Start Carousel -->
@@ -395,8 +395,8 @@
                                         @foreach($blogs as $blog)
                                             <a href="/showBlog/{{$blog->id}}" style="text-decoration: none" class="has-text-white">
                                                 <div class="item-{{$loop->index + 1}} column is-full">
-                                                    <p><strong style="color: white;">{{$blog->title}}</strong><br></p>
-                                                    <p class="">{{$blog->description}}</p>
+                                                    <h1><strong style="color: white;">{{$blog->title}}</strong><br></h1>
+                                                    <p id="carouselDescription" class="">{{$blog->description}}</p>
                                                     <img src="{{$blog->image}}">
                                                     <br><br><br>
                                                 </div>
