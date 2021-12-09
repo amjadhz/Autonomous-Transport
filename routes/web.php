@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\BlogPageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +22,8 @@ use App\Http\Controllers\WelcomeController;
 //});
 
 Route::get('/', [WelcomeController::class, 'index']);
+Route::get('/allBlogs', [BlogPageController::class, 'index']);
+Route::get('/showBlog/{blog}', [BlogPageController::class, 'show']);
 
 Auth::routes(['register'=>false]);
 
@@ -30,3 +33,4 @@ Route::resource('blogs',BlogController::class);
 Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
 
 Route::get('/languageDemo', 'App\Http\Controllers\HomeController@languageDemo');
+

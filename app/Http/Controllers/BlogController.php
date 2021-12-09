@@ -154,4 +154,6 @@ class BlogController extends Controller
             'blog' => 'required | string | min:50'
         ]);
     }
+
+
 }

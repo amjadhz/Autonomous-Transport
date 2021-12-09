@@ -363,3 +363,9 @@ body.preloader-site {
 #gameImage:hover{
     transform: scale(1.2);
 }
+
+.slider-navigation-previous,
+.slider-navigation-next{
+    background: black center center no-repeat;
+    border: 1px solid black;
+}

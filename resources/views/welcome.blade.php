@@ -55,6 +55,11 @@
                             </a>
                         </div>
                         <div class="navbar-item">
+                            <a class="navbar-item" href="#news">
+                                News
+                            </a>
+                        </div>
+                        <div class="navbar-item">
                             @if(\Illuminate\Support\Facades\Auth::user())
                                 <a href="/dashboard">Dashboard</a>
                             @else
@@ -91,6 +96,9 @@
                                 </li>
                                 <li>
                                     <a href="#game">Game</a>
+                                </li>
+                                <li>
+                                    <a href="#news">News</a>
                                 </li>
                                 <li>
                                     @if(\Illuminate\Support\Facades\Auth::user())
@@ -376,7 +384,7 @@
         <!-- End Main Content -->
 
 {{--                Display the last five blogs--}}
-                <div class="section-color services is-full">
+                <div class="section-color services is-full" id="news">
                     <div class="container is-justify-content-center">
                             <div class="column is-12 about-me">
                                 <h1 class="title has-text-centered section-title">News</h1>
@@ -385,17 +393,26 @@
                                 <!-- Start Carousel -->
                                     <div id="carousel-demo" class="carousel ">
                                         @foreach($blogs as $blog)
-                                            <div class="item-{{$loop->index + 1}} column is-full">
+                                            <a href="/showBlog/{{$blog->id}}" style="text-decoration: none" class="has-text-white">
+                                                <div class="item-{{$loop->index + 1}} column is-full">
                                                     <p><strong style="color: white;">{{$blog->title}}</strong><br></p>
                                                     <p class="">{{$blog->description}}</p>
-                                                <br><br><br>
-                                            </div>
+                                                    <img src="{{$blog->image}}">
+                                                    <br><br><br>
+                                                </div>
+                                            </a>
                                         @endforeach
                                     </div>
                                     <!-- End Carousel -->
+                                <br><br>
+                                <form action="/allBlogs">
+                                    <button class="button is-white">Show All</button>
+                                </form>
                             </div>
                     </div>
                 </div>
-
+            </div>
+        </div>
+    </div>
 @endsection
 
