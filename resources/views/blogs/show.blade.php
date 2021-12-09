@@ -9,15 +9,15 @@
                 <div class="column is-12 about-me">
                     <h1 class="title has-text-centered section-title">{{$blog->title}}</h1>
                 </div>
-                <div class="columns is-multiline">
+                <div class="columns is-multiline is-wrapped">
                     <div
                         class="column is-6 has-vertically-aligned-content"
                         data-aos="fade-right">
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{$blog->description}}</strong>
+                            &emsp;&emsp;<strong class="is-wrapped">{{$blog->description}}</strong>
                         </p>
                         <br/>
-                        <p>{{$blog->blog}}</p>
+                        <p class="is-wrapped">{{$blog->blog}}</p>
                         <br/>
                     </div>
                     <div class="column is-6 right-image " data-aos="fade-left">

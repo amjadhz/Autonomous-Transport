@@ -27,7 +27,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $blogs = Blog::latest()->orderBy('created_at')->take(5)->get();
+        return view('dashboard',
+            [
+                'blogs'=> $blogs
+            ]);
     }
 
 

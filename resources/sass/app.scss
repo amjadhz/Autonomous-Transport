@@ -355,3 +355,11 @@ body.preloader-site {
 .white {
     color: ghostwhite
 }
+
+#gameImage {
+    transition: 0.5s;
+}
+
+#gameImage:hover {
+    transform: scale(1.2);
+}
