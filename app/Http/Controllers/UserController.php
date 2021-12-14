@@ -46,7 +46,7 @@ class UserController extends Controller
         abort_if(Gate::denies('logged_user'), Response::HTTP_FORBIDDEN);
 
         $user = User::create($this->validator($request));
-        $user->password = Hash::make('password');
+        $user->password = Hash::make($request->password);
         $user->save();
         return redirect('/users');
     }
