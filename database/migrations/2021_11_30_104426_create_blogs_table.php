@@ -15,14 +15,17 @@ class CreateBlogsTable extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->nullable();
             $table->String('title');
+            $table->foreignId('user_id')->nullable();
             $table->String('description')->nullable();
             $table->String('image')->default('/images/default-blog-image.png');
             $table->longText('blog');
+            $table->foreignId('updated_by')->nullable();
             $table->timestamps();
 
             $table->foreign("user_id")->references("id")->on("users")->nullOnDelete();
+            $table->foreign("updated_by")->references("id")->on("users")->nullOnDelete();
+
         });
     }
 
