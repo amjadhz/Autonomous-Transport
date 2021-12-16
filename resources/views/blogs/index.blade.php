@@ -12,9 +12,12 @@
                                 <th>ID</th>
                                 <th>Blog title</th>
                                 <th>Date</th>
+                                <th>Created by</th>
+                                <th>Updated by</th>
                                 <th>Show</th>
                                 <th>Edit</th>
                                 <th>Delete the blog</th>
+
                             </tr>
                             </thead>
 
@@ -24,6 +27,20 @@
                                         <th>{{$blog->id}}</th>
                                         <td>{{$blog->title}}</td>
                                         <td>{{$blog->updated_at}}</td>
+                                        <td>
+                                            @if($blog->user_id === null)
+                                                Deleted user
+                                            @else
+                                            {{$blog->user->name}}
+                                            @endif
+                                        </td>
+                                        <td>
+                                            @if($blog->updated_by === null)
+                                            None
+                                            @else
+                                            {{$blog->getUserName($blog->updated_by)}}
+                                            @endif
+                                        </td>
                                         <td><a href="/blogs/{{$blog->id}}"><button class="button">Show</button></a></td>
                                         <td class="is-hoverable"><a href="/blogs/{{$blog->id}}/edit"><button class="button is-link">Edit</button></a></td>
                                         <td>

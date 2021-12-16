@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\BlogPageController;
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +32,8 @@ Auth::routes(['register'=>false]);
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 
 Route::resource('blogs',BlogController::class);
+Route::resource('users',UserController::class);
+
 Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
 
 Route::get('/languageDemo', 'App\Http\Controllers\HomeController@languageDemo');

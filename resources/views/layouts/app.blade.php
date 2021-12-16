@@ -37,6 +37,10 @@
                     <a class="navbar-item is-hovered" href="{{ url('/blogs') }}">
                         Blogs
                     </a>
+
+                    <a class="navbar-item is-hovered" href="{{ url('/users') }}">
+                        Admins
+                    </a>
                 @endauth
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
 
