@@ -4,7 +4,6 @@ return [
     //Main titles of the articles
     'welcome' => 'Welkom op onze website!',
     'aboutShip' => 'Over het schip',
-    'news' => 'Nieuws',
     'makingOfTheVessel' => 'Totstandkoming van het schip',
     'damen' => 'Damen',
     'captain' => 'Captain AI',

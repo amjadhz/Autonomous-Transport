@@ -4,7 +4,6 @@ return [
     //Main titles of the articles
     'welcome' => 'Willkommen auf unserer Webseite!',
     'aboutShip' => 'Über das Schiff',
-    'news' => 'Neu',
     'makingOfTheVessel' => 'Bau des Schiffes',
     'damen' => 'Damen',
     'captain' => 'Captain AI',

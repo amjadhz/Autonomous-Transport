@@ -55,8 +55,8 @@
                             </a>
                         </div>
                         <div class="navbar-item">
-                            <a class="navbar-item" href="#news">
-                                News
+                            <a class="navbar-item" href="#blogs">
+                                Blogs
                             </a>
                         </div>
                         <div class="navbar-item">
@@ -98,7 +98,7 @@
                                     <a href="#game">Game</a>
                                 </li>
                                 <li>
-                                    <a href="#news">{{__('messages.news')}}</a>
+                                    <a href="#blogs">Blogs</a>
                                 </li>
                                 <li>
                                     @if(\Illuminate\Support\Facades\Auth::user())
@@ -384,7 +384,7 @@
         <!-- End Main Content -->
 
 {{--                Display the last five blogs--}}
-                <div class="section-color services is-full" id="news">
+                <div class="section-color services is-full" id="blogs">
                     <div class="container is-justify-content-center">
                             <div class="column is-12 about-me">
                                 <h1 class="title has-text-centered section-title">{{__('messages.news')}}</h1>
@@ -393,6 +393,8 @@
                                 <!-- Start Carousel -->
                                     <div id="carousel-demo" class="carousel ">
                                         @foreach($blogs as $blog)
+{{--                                            {{dd($blog)}}--}}
+
                                             <a href="/showBlog/{{$blog->id}}" style="text-decoration: none" class="has-text-white">
                                                 <div class="item-{{$loop->index + 1}} column is-full">
                                                     <h1><strong style="color: white;">{{$blog->title}}</strong><br></h1>

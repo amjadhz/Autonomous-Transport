@@ -4,7 +4,6 @@ return [
     //Main titles of the articles
     'welcome' => 'WelcomeController to our application!',
     'aboutShip' => 'About the ship',
-    'news' => 'News',
     'makingOfTheVessel' => 'Making of the Vessel',
     'damen' => 'Damen',
     'captain' => 'Captain AI',
