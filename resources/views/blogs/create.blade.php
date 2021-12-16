@@ -15,10 +15,10 @@
                                 <label for="title" class="col-md-4 col-form-label text-md-right">Blog Title</label>
 
                                 <div class="col-md-6">
-                                    <input id="title" type="text" class="form-control @error('title') border-danger @enderror" name="title" value="{{ old('title') }}" required autocomplete="title" autofocus>
+                                    <input id="title" type="text" class="form-control @error('title') border-danger @enderror" name="title" minlength="5" maxlength="100" value="{{ old('title') }}" required autocomplete="title" autofocus>
 
                                     @if($errors->has('title'))
-                                        <p class="text-danger">*Fill in a valid title of the blog (minimum 5 characters)</p>
+                                        <p class="text-danger">*Fill in a valid title of the blog (min 5, max 100 characters)</p>
                                     @endif
                                 </div>
                             </div>
@@ -27,9 +27,9 @@
                                 <label for="description" class="col-md-4 col-form-label text-md-right">Description</label>
 
                                 <div class="col-md-6">
-                                    <textarea class="form-control @error('description') border-danger @enderror" name="description" rows="5">{{old('description')}}</textarea>
+                                    <textarea class="form-control @error('description') border-danger @enderror" name="description" minlength="20" maxlength="255" rows="5">{{old('description')}}</textarea>
                                     @if($errors->has('description'))
-                                        <p class="text-danger">*Fill in a valid description of the blog (minimum 20 characters)</p>
+                                        <p class="text-danger">*Fill in a valid description of the blog (min 20, max 255 characters)</p>
                                     @endif
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                 <label for="blog" class="col-md-4 col-form-label text-md-right">Content</label>
 
                                 <div class="col-md-6">
-                                    <textarea class="form-control @error('blog') border-danger @enderror" name="blog" rows="10">{{old('blog')}}</textarea>
+                                    <textarea class="form-control @error('blog') border-danger @enderror" name="blog"  minlength="50" rows="10">{{old('blog')}}</textarea>
                                     @if($errors->has('blog'))
                                         <p class="text-danger">*Fill in a valid blog content (minimum 50 characters)</p>
                                     @endif

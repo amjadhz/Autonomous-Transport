@@ -6,6 +6,8 @@ use App\Models\Blog;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
 
 class BlogController extends Controller
@@ -19,8 +21,9 @@ class BlogController extends Controller
     {
         abort_if(Gate::denies('logged_user'), Response::HTTP_FORBIDDEN);
 
-        $blogs = Blog::get();
-        $user = User::get();
+        $blogs = Blog::all();
+        $user = User::all();
+
         return view('blogs.index', [
             'blogs'=>$blogs,
             'user'=>$user
@@ -46,7 +49,9 @@ class BlogController extends Controller
         abort_if(Gate::denies('logged_user'), Response::HTTP_FORBIDDEN);
 
         $blog = Blog::create($this->validateBlog($request));
-        $blog->user()->associate(User::find($request->user_id));
+
+        $blog->user_id = Auth::id();
+        $blog->updated_by = Auth::id();
 
         if($request->file()) {
             $name = time().'_'.$request->image->getClientOriginalName();
@@ -105,8 +110,8 @@ class BlogController extends Controller
     {
         abort_if(Gate::denies('logged_user'), Response::HTTP_FORBIDDEN);
 
-        $blog = Blog::create($this->validateBlog($request));
-        $blog->user()->associate(User::find($request->user_id));
+        $blog->update($this->validateBlog($request));
+        $blog->updated_by = Auth::id();
 
         if($request->file()) {
             $name =time().'_'.$request->image->getClientOriginalName();
@@ -149,9 +154,11 @@ class BlogController extends Controller
 
         return request()->validate
         ([
-            'title' => 'required | string | min:5',
-            'description' => 'required | string | min:20',
-            'blog' => 'required | string | min:50'
+            'title' => 'required | string | min:5 | max:100',
+            'description' => 'required | string | min:20 | max:255',
+            'blog' => 'required | string| min:50',
+            'image' => 'image'
         ]);
     }
+
 }
