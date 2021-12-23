@@ -8,6 +8,9 @@ return [
     'damen' => 'Damen',
     'captain' => 'Captain AI',
     'tech' => 'Die Technologie',
+    'gameDescription' => 'Spiele das Spiel und sieh, wie weit du kommst! Sammle die verschiedenen Gegenstände, um so viele Punkte wie möglich zu erzielen. Aber
+                            pass auf die Felsen und Strudel, sie werden dein Schiff zerstören!',
+    'noBlogs' => 'Keine Blogs verfügbar',
 
     //Subtitles of the articles
     'aboutShip-sub' => 'Mit unserer Website entdecken Sie die Möglichkeiten des autonomen Segelns!',

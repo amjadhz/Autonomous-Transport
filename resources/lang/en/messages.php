@@ -2,12 +2,16 @@
 
 return [
     //Main titles of the articles
-    'welcome' => 'WelcomeController to our application!',
+    'welcome' => 'Welcome to our application!',
     'aboutShip' => 'About the ship',
     'makingOfTheVessel' => 'Making of the Vessel',
     'damen' => 'Damen',
     'captain' => 'Captain AI',
     'tech' => 'The Technology',
+    'gameDescription' => 'Play the game and see how far you can get! Collect the various items to score as high as possible. But watch out for the
+                            rocks and whirlpools, they will destroy your ship!',
+    'noBlogs' => 'No blogs available',
+
 
     //Subtitles of the articles
     'aboutShip-sub' => 'Use our website to discover the possibilities of autonomous Shipping!',
