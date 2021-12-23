@@ -143,7 +143,7 @@
                         class="column is-6 has-vertically-aligned-content"
                         data-aos="fade-right">
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{ __('messages.aboutShip-sub') }}</strong>
+                            <strong>{{ __('messages.aboutShip-sub') }}</strong>
                         </p>
                         <br/>
                         <p>
@@ -169,7 +169,7 @@
                         data-aos="fade-right"
                     >
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{__('messages.makingOfTheVessel-sub')}}</strong>
+                            <strong>{{__('messages.makingOfTheVessel-sub')}}</strong>
                         </p>
                         <br/>
                         <p>
@@ -197,7 +197,7 @@
                         data-aos="fade-right"
                     >
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{__('messages.damen-sub')}}</strong>
+                            <strong>{{__('messages.damen-sub')}}</strong>
                         </p>
                         <br/>
                         <p>
@@ -225,7 +225,7 @@
                         data-aos="fade-right"
                     >
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{__('messages.captain-sub')}}</strong>
+                            <strong>{{__('messages.captain-sub')}}</strong>
                         </p>
                         <br/>
                         <p>
@@ -303,7 +303,7 @@
                     <div class="column is-6 has-vertically-aligned-content"
                          data-aos="fade-right">
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{__('messages.sensor')}} </strong>
+                            <strong>{{__('messages.sensor')}} </strong>
                         </p>
                         <br/>
                         <p>
@@ -330,8 +330,9 @@
                     <div class="columns is-multiline">
                         <div
                             class="column is-12 about-me is-justify-content-center is-flex"
-                            data-aos="fade-in"
-                            data-aos-easing="linear">
+                            data-aos="fade-in" data-aos-easing="linear">
+                            <p class="has-text-centered center">This is a model of the vessel what will be in Vlissingen in 2027. <br>
+                                Click and drag to look around and click to move</p>
                         </div>
                         <div class="container">
                                 @php
