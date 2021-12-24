@@ -42,4 +42,10 @@ jobs:
           npm upgrade 
           npm install
           npm run dev
-
+    
+    
+    - uses: actions/checkout@v2
+    - name: Try to fail
+      run: exit 1
+    - name: Print message if we do not fail
+      run: echo Should not get here
