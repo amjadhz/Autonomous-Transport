@@ -47,13 +47,22 @@
                                 <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
 
                                 <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" onkeyup="getPassword()">
 
                                     @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
+                                    <div class="focus-password">
+                                        <ul class="list-group" id="requirements">
+                                            <li id="length" class="list-group-item">At least 8 characters</li>
+                                            <li id="lowercase" class="list-group-item">At least 1 lowercase letter</li>
+                                            <li id="uppercase" class="list-group-item">At least 1 uppercase letter</li>
+                                            <li id="number" class="list-group-item">At least 1 numerical number</li>
+                                            <li id="special" class="list-group-item">At least 1 special character</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
