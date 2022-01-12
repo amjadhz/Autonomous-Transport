@@ -1,7 +1,6 @@
 {
     "private": true,
     "scripts": {
-        "install" : "scripts/install.js",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
