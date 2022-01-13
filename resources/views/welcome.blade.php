@@ -67,6 +67,19 @@
                             @endif
                         </div>
 
+                        <div class="navbar-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="flag-icon flag-icon-{{Config::get('languages')[App::getLocale()]['flag-icon']}}"></span> {{ Config::get('languages')[App::getLocale()]['display'] }}
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    @foreach (Config::get('languages') as $lang => $language)
+                                        @if ($lang != App::getLocale())
+                                            <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"><span class="flag-icon flag-icon-{{$language['flag-icon']}}"></span> {{$language['display']}}</a>
+                                        @endif
+                                    @endforeach
+                                </div>
+                        </div>
+
                     </div>
                 </div>
             </nav>
@@ -80,7 +93,7 @@
             </div>
             <!-- End Hero Content-->
             <!-- Begin Hero Menu -->
-            <div class="hero-foot ">
+            <div class="hero-foot">
                 <div class="hero-foot--wrapper">
                     <div class="columns">
                         <div class="column is-12 hero-menu-desktop has-text-centered">
@@ -108,6 +121,7 @@
                                     @endif
                                 </li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
@@ -387,7 +401,7 @@
                 <div class="section-color services is-full" id="blogs">
                     <div class="container is-justify-content-center">
                             <div class="column is-12 about-me">
-                                <h1 class="title has-text-centered section-title">{{__('messages.news')}}</h1>
+                                <h1 class="title has-text-centered section-title">{{__('Blogs')}}</h1>
                             </div>
                             <div class="container has-text-centered overflow-hidden">
                                 <!-- Start Carousel -->

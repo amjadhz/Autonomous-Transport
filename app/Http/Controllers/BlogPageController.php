@@ -9,7 +9,7 @@ class BlogPageController extends Controller
 {
     public function index()
     {
-        $blogs = Blog::all()->get();
+        $blogs = Blog::all();
 
         return view('blogs',[
             'blogs' => $blogs

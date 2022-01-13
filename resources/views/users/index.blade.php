@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Blogs</div>
+                    <div class="card-header">Users</div>
                     <table class="table">
                         <thead>
                         <tr>
@@ -24,11 +24,15 @@
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->email}}</td>
                                 <td>
+                                    @if(\Illuminate\Support\Facades\Auth::user()->id !== $user->id)
                                     <form method="POST" action="/users/{{$user->id}}">
                                         @csrf
                                         @method('DELETE')
                                           <button type="submit" name="submit" class="button is-danger">Delete</button>
                                     </form>
+                                    @else
+
+                                    @endif
                                 </td>
                             </tr>
                         @endforeach

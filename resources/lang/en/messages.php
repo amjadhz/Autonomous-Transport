@@ -2,7 +2,7 @@
 
 return [
     //Main titles of the articles
-    'welcome' => 'WelcomeController to our application!',
+    'welcome' => 'Welcome to our application!',
     'aboutShip' => 'About the ship',
     'makingOfTheVessel' => 'Making of the Vessel',
     'damen' => 'Damen',
