@@ -17,7 +17,10 @@ jobs:
         php-version: '8.0'
     - uses: actions/checkout@v2
           
-    - name: Deploy the application on heroku
-      run: git push heroku main
-      
-    
+    - name: Deploy to Heroku
+    - uses: AkhileshNS/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: 6828e0c0-4e74-4411-a411-52d96c29a8fa
+        heroku_email: hwid0001@hz.nl
+        heroku_app_name: autonomous-transport
+   
