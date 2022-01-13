@@ -23,4 +23,5 @@ jobs:
         heroku_api_key: 6828e0c0-4e74-4411-a411-52d96c29a8fa
         heroku_email: hwid0001@hz.nl
         heroku_app_name: autonomous-transport
+    - run: git push heroku main
    
