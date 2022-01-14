@@ -356,12 +356,30 @@ body.preloader-site {
     color: ghostwhite
 }
 
-#gameImage {
+#gameImage{
     transition: 0.5s;
 }
 
-#gameImage:hover {
+#gameImage:hover{
     transform: scale(1.2);
+}
+
+.slider-navigation-previous,
+.slider-navigation-next{
+    background: black center center no-repeat;
+    border: 1px solid black;
+}
+
+#carouselDescription{
+    overflow-wrap: break-word;
+}
+
+.showBlogContent{
+    text-decoration: none !important;
+}
+
+.showBlogDescription{
+    overflow-wrap: break-word;
 }
 
 .center {

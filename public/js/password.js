@@ -3,7 +3,7 @@ var __webpack_exports__ = {};
 /*!**********************************!*\
   !*** ./resources/js/password.js ***!
   \**********************************/
-var password = document.querySelector("#password");
+var password = document.getElementById("myInput");
 var list = document.querySelector(".focus-password"); // password check
 
 document.addEventListener("click", showList);

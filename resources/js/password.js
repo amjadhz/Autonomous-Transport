@@ -1,4 +1,4 @@
-const password = document.querySelector("#password");
+const password = document.getElementById("myInput");
 const list = document.querySelector(".focus-password");
 // password check
 document.addEventListener("click", showList);
