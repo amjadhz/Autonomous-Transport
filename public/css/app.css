@@ -13464,4 +13464,6 @@ body.preloader-site {
   overflow-wrap: break-word;
 }
 
-
+.center {
+  margin: auto;
+}

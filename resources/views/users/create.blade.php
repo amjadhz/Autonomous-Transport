@@ -11,7 +11,6 @@
                     <div class="card-body">
                         <form method="POST" action="/users">
                             @csrf
-
                             <div class="form-group row">
 
                                 <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
@@ -21,7 +20,7 @@
 
                                     @error('name')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong class="text-danger">{{ $message }}</strong>
                                     </span>
                                     @enderror
                                 </div>
@@ -36,7 +35,7 @@
 
                                     @error('email')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong class="text-danger">{{ $message }}</strong>
                                     </span>
                                     @enderror
                                 </div>
@@ -47,13 +46,25 @@
                                 <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
 
                                 <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                    <input id="myInput" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                    <input type="checkbox" onclick="showPassword()">Show Password
+
+
 
                                     @error('password')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong class="text-danger">{{ $message }}</strong>
                                     </span>
                                     @enderror
+                                    <div class="focus-password">
+                                        <ul class="list-group" id="requirements">
+                                            <li id="length" class="list-group-item">At least 8 characters</li>
+                                            <li id="lowercase" class="list-group-item">At least 1 lowercase letter</li>
+                                            <li id="uppercase" class="list-group-item">At least 1 uppercase letter</li>
+                                            <li id="number" class="list-group-item">At least 1 numerical number</li>
+                                            <li id="special" class="list-group-item">At least 1 special character</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
@@ -62,7 +73,8 @@
                                 <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
 
                                 <div class="col-md-6">
-                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                    <input id="myInputConfirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                    <input type="checkbox" onclick="showPasswordConfirm()">Show Password
                                 </div>
                             </div>
 

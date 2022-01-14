@@ -67,6 +67,19 @@
                                 <a href="/dashboard">Login</a>
                             @endif
                         </div>
+
+                        <div class="navbar-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="flag-icon flag-icon-{{Config::get('languages')[App::getLocale()]['flag-icon']}}"></span> {{ Config::get('languages')[App::getLocale()]['display'] }}
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    @foreach (Config::get('languages') as $lang => $language)
+                                        @if ($lang != App::getLocale())
+                                            <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"><span class="flag-icon flag-icon-{{$language['flag-icon']}}"></span> {{$language['display']}}</a>
+                                        @endif
+                                    @endforeach
+                                </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -80,7 +93,7 @@
             </div>
             <!-- End Hero Content-->
             <!-- Begin Hero Menu -->
-            <div class="hero-foot ">
+            <div class="hero-foot">
                 <div class="hero-foot--wrapper">
                     <div class="columns">
                         <div class="column is-12 hero-menu-desktop has-text-centered">
@@ -108,6 +121,7 @@
                                     @endif
                                 </li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
@@ -156,7 +170,7 @@
                         class="column is-6 has-vertically-aligned-content"
                         data-aos="fade-right">
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{ __('messages.aboutShip-sub') }}</strong>
+                            <strong>{{ __('messages.aboutShip-sub') }}</strong>
                         </p>
                         <br/>
                         <p>
@@ -182,7 +196,7 @@
                         data-aos="fade-right"
                     >
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{__('messages.makingOfTheVessel-sub')}}</strong>
+                            <strong>{{__('messages.makingOfTheVessel-sub')}}</strong>
                         </p>
                         <br/>
                         <p>
@@ -210,7 +224,7 @@
                         data-aos="fade-right"
                     >
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{__('messages.damen-sub')}}</strong>
+                            <strong>{{__('messages.damen-sub')}}</strong>
                         </p>
                         <br/>
                         <p>
@@ -238,7 +252,7 @@
                         data-aos="fade-right"
                     >
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{__('messages.captain-sub')}}</strong>
+                            <strong>{{__('messages.captain-sub')}}</strong>
                         </p>
                         <br/>
                         <p>
@@ -316,7 +330,7 @@
                     <div class="column is-6 has-vertically-aligned-content"
                          data-aos="fade-right">
                         <p class="is-larger">
-                            &emsp;&emsp;<strong>{{__('messages.sensor')}} </strong>
+                            <strong>{{__('messages.sensor')}} </strong>
                         </p>
                         <br/>
                         <p>
@@ -343,8 +357,9 @@
                     <div class="columns is-multiline">
                         <div
                             class="column is-12 about-me is-justify-content-center is-flex"
-                            data-aos="fade-in"
-                            data-aos-easing="linear">
+                            data-aos="fade-in" data-aos-easing="linear">
+                            <p class="has-text-centered center">This is a model of the vessel what will be in Vlissingen in 2027. <br>
+                                Click and drag to look around and click to move</p>
                         </div>
                         <div class="container">
                             @php
@@ -418,7 +433,6 @@
                                 </div>
                                 <!-- End Carousel -->
                             @endif
-
                             <br><br>
                             @if(!$blogs->isEmpty())
                                 <form action="/allBlogs">

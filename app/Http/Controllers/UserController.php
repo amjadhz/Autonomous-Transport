@@ -34,7 +34,10 @@ class UserController extends Controller
     {
         abort_if(Gate::denies('logged_user'), Response::HTTP_FORBIDDEN);
 
+
+
         return view("users.create");
+
     }
 
     /**
@@ -84,7 +87,13 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        abort_if(Gate::denies('logged_user'), Response::HTTP_FORBIDDEN);
+
+        $user = User::update($this->validator($request));
+        $user->password = Hash::make($request->password);
+        $user->save();
+
+        return redirect('/users');
     }
 
     /**
@@ -94,9 +103,14 @@ class UserController extends Controller
     public function destroy(user $user)
     {
         abort_if(Gate::denies('logged_user'), Response::HTTP_FORBIDDEN);
+        if(Auth::user()->id !== $user->id) {
+            $user->delete();
+            return redirect(route('users.index'));
+        }
+        else
+        {
 
-        $user->delete();
-        return redirect(route('users.index'));
+        }
         //
     }
 
@@ -104,12 +118,16 @@ class UserController extends Controller
     /**
      * @return array
      */
-    protected function validator()
+    protected function validator(Request $request)
     {
-        return request()->validate([
+        return $request->validate([
             'name' => 'required | string | max:255',
             'email' => 'required | string | email | max:255 | unique:users',
-            'password' => 'required', 'string', 'min:8', 'confirmed',
+            'password' =>['required', 'min:8',
+                'string',
+                'regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!$#%@]).*$/',
+                'confirmed']
+
         ]);
     }
 }

@@ -2172,6 +2172,26 @@ $(window).on("load", function () {
   Body.addClass("preloader-site");
 });
 
+window.showPassword = function (code) {
+  var x = document.getElementById("myInput");
+
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+};
+
+window.showPasswordConfirm = function (code) {
+  var x = document.getElementById("myInputConfirm");
+
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+};
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
