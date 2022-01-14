@@ -9,7 +9,6 @@ use Tests\TestCase;
 
 class AppTest extends TestCase
 {
-
     public function test_get_index(){
         $response = $this->get('/');
         $response->assertStatus(200);
