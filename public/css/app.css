@@ -11531,10 +11531,10 @@ h3 {
 }
 
 .flag-icon-tc {
-  background-image: url(/images/vendor/flag-icon-css/flags/4x3/tc.svg?4536527cb970a1b7ff5011388e52fa6e);
+  background-image: url(/images/vendor/flag-icon-css/flags/4x3/tc.svg?c817f550f47380234387a6efa779e0d7);
 }
 .flag-icon-tc.flag-icon-squared {
-  background-image: url(/images/vendor/flag-icon-css/flags/1x1/tc.svg?e8c0258a90e587a6da1baef9a805a030);
+  background-image: url(/images/vendor/flag-icon-css/flags/1x1/tc.svg?7bce3122dd358a8489b57a7b44856c69);
 }
 
 .flag-icon-td {
@@ -12232,4 +12232,8 @@ body.preloader-site {
 
 #gameImage:hover {
   transform: scale(1.2);
+}
+
+.center {
+  margin: auto;
 }
