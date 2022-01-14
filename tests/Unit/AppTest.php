@@ -2,10 +2,9 @@
 
 namespace Tests\Unit;
 
-use App\Http\Controllers\UserController;
+
 use App\Models\User;
-use Database\Seeders\UserSeerder;
-use Illuminate\Database\Seeder;
+
 use Tests\TestCase;
 
 class AppTest extends TestCase
