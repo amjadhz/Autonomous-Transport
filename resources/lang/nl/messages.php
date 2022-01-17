@@ -8,6 +8,10 @@ return [
     'damen' => 'Damen',
     'captain' => 'Captain AI',
     'tech' => 'De Technologie',
+    'gameDescription' => 'Speel het spel en probeer de hoogst mogelijke score te halen door de objecten in het water te verzamelen! Maar kijk uit voor de
+                            stenen en de draaikolken, die vernietigen je schip!',
+    'noBlogs' => 'Geen blogs beschikbaar',
+
 
     //Subtitles of the articles
     'aboutShip-sub' => 'Met onze website ontdek je de mogelijkheden van autonoom varen!',

@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Showcase - Personal Portfolio One Page Bulma Theme</title>
+    <title>Autonomous Transport Challenge</title>
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
@@ -26,9 +26,22 @@
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
 <script>
+
+    function findDeviceType(){
+        const ua = navigator.userAgent;
+        if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+            console.log("mobile");
+            return false;
+        } else {
+            console.log("pc");
+            return true;
+        }
+    }
+
     bulmaCarousel.attach('#carousel-demo', {
         slidesToScroll: 1,
         slidesToShow: 1,
+        navigation:findDeviceType(),
         autoplay: true,
         autoplaySpeed: 5000,
         infinite: true,
