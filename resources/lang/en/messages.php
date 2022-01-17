@@ -2,15 +2,16 @@
 
 return [
     //Main titles of the articles
-    'welcome' => 'Discover more about the vessel and the masterminds behind it',
+    'welcome' => 'Welcome to our application!',
     'aboutShip' => 'About the ship',
     'makingOfTheVessel' => 'Making of the Vessel',
     'damen' => 'Damen',
     'captain' => 'Captain AI',
     'tech' => 'The Technology',
-    'game' => 'Too much information? Try to beat the highscore',
-    'blog' => 'Want to find out more? Keep an eye out for updates on the blog',
-    '3d' => 'Take a closer look: explore a 3D model of the vessel which will be piloting itself around Vlissingen in 2027',
+    'gameDescription' => 'Play the game and see how far you can get! Collect the various items to score as high as possible. But watch out for the
+                            rocks and whirlpools, they will destroy your ship!',
+    'noBlogs' => 'No blogs available',
+
 
     //Subtitles of the articles
     'aboutShip-sub' => 'Use our website to discover the possibilities of autonomous Shipping!',
