@@ -364,11 +364,11 @@ body.preloader-site {
     transform: scale(1.2);
 }
 
-//.slider-navigation-previous,
-//.slider-navigation-next{
-//    background: black center center no-repeat;
-//    border: 1px solid black;
-//}
+.slider-navigation-previous,
+.slider-navigation-next{
+    background: black center center no-repeat;
+    border: 1px solid black;
+}
 
 #carouselDescription{
     overflow-wrap: break-word;

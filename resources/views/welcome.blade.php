@@ -152,7 +152,7 @@
     <!-- End Header -->
     <div class="container">
         <div class="row justify-content-center">
-            <h3>{{__('messages.welcome')}}</h3>
+            <h4>{{__('messages.welcome')}}</h4>
         </div>
     </div>
 
@@ -354,11 +354,16 @@
             <div class="section-color services" id="services">
                 <div class="container">
                     <h1 class="title has-text-centered section-title">3D Model</h1>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <h5>{{__('messages.3d')}}</h5>
+                        </div>
+                    </div>
                     <div class="columns is-multiline">
                         <div
                             class="column is-12 about-me is-justify-content-center is-flex"
                             data-aos="fade-in" data-aos-easing="linear">
-                            <p class="has-text-centered center">This is a model of the vessel what will be in Vlissingen in 2027. <br>
+                            <p class="has-text-centered center"> <br>
                                 Click and drag to look around and click to move</p>
                         </div>
                         <div class="container">
@@ -395,7 +400,7 @@
                         <h1 class="title has-text-centered section-title">Game</h1>
                     </div>
                     <p class="has-text-centered">
-                        {{__('messages.gameDescription')}}
+                        {{__('messages.game')}}
                     </p>
                     <div class="container">
                         <div class="columns is-centered">
@@ -412,6 +417,11 @@
                     <div class="container is-justify-content-center">
                         <div class="column is-12 about-me">
                             <h1 class="title has-text-centered section-title">Blogs</h1>
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <h4>{{__('messages.blog')}}</h4>
+                                </div>
+                            </div>
                         </div>
                         <div class="container has-text-centered overflow-hidden">
                             @if($blogs->isEmpty())
