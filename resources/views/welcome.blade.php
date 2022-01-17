@@ -95,13 +95,27 @@
     </div>
     <!-- End Header -->
 
+    <div class="container">
+        <div class="row justify-content-center">
+            <h4>{{__('messages.welcome')}}</h4>
+        </div>
+    </div>
+
+
     <!-- Begin Main Content -->
     <div class="main-content">
         <!-- Begin About The Ship Section -->
         <div class="section-light about-me" id="about-me">
             <div class="container">
                 <div class="column is-12 about-me">
+
                     <h1 class="title has-text-centered section-title">About the ship</h1>
+                    <h1 class="title has-text-centered section-title">{{__('messages.aboutShip')}}</h1>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <h4>{{__('messages.welcome')}}</h4>
+                        </div>
+                    </div>
                 </div>
                 <div class="columns is-multiline">
                     <div
@@ -319,10 +333,17 @@
                 <div class="container">
                     <h1 class="title has-text-centered section-title">3D</h1>
                     <div class="columns is-multiline">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <h4>{{__('messages.3d')}}</h4>
+                            </div>
+                        </div>
                         <div
                             class="column is-12 about-me is-justify-content-center is-flex"
-                            data-aos="fade-in"
-                            data-aos-easing="linear">
+
+                            data-aos="fade-in" data-aos-easing="linear">
+                            <p class="has-text-centered center">
+                                Click and drag to look around and click to move</p>
                         </div>
                         <div>
                             <iframe width='853' height='480'
@@ -336,6 +357,63 @@
             </div>
             <!-- End Services Content -->
         </div>
+
+                <!-- Begin of the Game -->
+                <div>
+                    <div class="column is-12 about-me" id="game">
+                        <br><br><br>
+                        <h1 class="title has-text-centered section-title">Game</h1>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <h4>{{__('messages.game')}}</h4>
+                        </div>
+                    </div>
+                    <div class="container" >
+                        <div class="columns is-centered"  >
+                            <a href="https://games.gdevelop-app.com/game-8b2f3e0f-a627-46e6-ac54-2163546a66db/index.html" target="_blank">
+                                <img src="/images/Logo.png" class="is-hoverable" id="gameImage"></a>
+                        </div>
+                    </div>
+                </div>
         <!-- End Main Content -->
+
+{{--                Display the last five blogs--}}
+                <div class="section-color services is-full" id="blogs">
+                    <div class="container is-justify-content-center">
+                            <div class="column is-12 about-me">
+                                <h1 class="title has-text-centered section-title">{{__('Blogs')}}</h1>
+                            </div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <h4>{{__('messages.blog')}}</h4>
+                            </div>
+                        </div>
+                            <div class="container has-text-centered overflow-hidden">
+                                <!-- Start Carousel -->
+                                    <div id="carousel-demo" class="carousel ">
+                                        @foreach($blogs as $blog)
+{{--                                            {{dd($blog)}}--}}
+
+                                            <a href="/showBlog/{{$blog->id}}" style="text-decoration: none" class="has-text-white">
+                                                <div class="item-{{$loop->index + 1}} column is-full">
+                                                    <h1><strong style="color: white;">{{$blog->title}}</strong><br></h1>
+                                                    <p id="carouselDescription" class="">{{$blog->description}}</p>
+                                                    <img src="{{$blog->image}}">
+                                                    <br><br><br>
+                                                </div>
+                                            </a>
+                                        @endforeach
+                                    </div>
+                                    <!-- End Carousel -->
+                                <br><br>
+                                <form action="/allBlogs">
+                                    <button class="button is-white">Show All</button>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </div>
 @endsection
 
