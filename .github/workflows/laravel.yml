@@ -36,9 +36,9 @@ jobs:
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
-      run: vendor/bin/phpunit
-    - name: Set up npm 
+      run: php artisan test
+    - name: Set up npm
       run: |
-          npm upgrade 
+          npm upgrade
           npm install
           npm run dev
