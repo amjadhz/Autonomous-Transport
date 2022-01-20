@@ -42,7 +42,8 @@ jobs:
           npm upgrade
           npm install
           npm run dev
-          
+  
+  
   lint:
     runs-on: ubuntu-latest
 
@@ -55,3 +56,19 @@ jobs:
 
         env:
          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          
+  
+  SonarCloud:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@main
+        env:
+         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+         SONAR_TOKEN: ${{secrets.SONAR_TOKEN}}
+         
+         
+
+
