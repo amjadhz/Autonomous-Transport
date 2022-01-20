@@ -42,3 +42,16 @@ jobs:
           npm upgrade
           npm install
           npm run dev
+          
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+
+      - name: Super-Linter
+        uses: github/super-linter@v4.8.5
+
+        env:
+         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
